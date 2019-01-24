@@ -23,7 +23,7 @@ namespace Deliverable2_Conditional_Statement
                 int grade = int.Parse(input);
 
                 // This if/else if/else statement is used to conditionally test the user input.
-                if (grade > 97)
+                if ((grade > 97)&&(grade<101))
                     Console.WriteLine("Your grade is A+.");
                 else if ((grade > 92) && (grade < 98))
                     Console.WriteLine("Your grade is A.");
@@ -56,6 +56,8 @@ namespace Deliverable2_Conditional_Statement
             catch
             {
                 Console.WriteLine("Please enter an integer.");
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey(true);
             }// end of catch
         }// end of main
     }// end of class
